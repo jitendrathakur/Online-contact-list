@@ -1,0 +1,126 @@
+.midBox, .registrationBox {
+    background: rgb(206,219,233); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(206,219,233,1) 0%, rgba(170,197,222,1) 11%, rgba(97,153,199,1) 26%, rgba(65,154,214,1) 41%, rgba(75,184,240,1) 64%, rgba(58,139,194,1) 77%, rgba(38,85,139,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,219,233,1)), color-stop(11%,rgba(170,197,222,1)), color-stop(26%,rgba(97,153,199,1)), color-stop(41%,rgba(65,154,214,1)), color-stop(64%,rgba(75,184,240,1)), color-stop(77%,rgba(58,139,194,1)), color-stop(100%,rgba(38,85,139,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 11%,rgba(97,153,199,1) 26%,rgba(65,154,214,1) 41%,rgba(75,184,240,1) 64%,rgba(58,139,194,1) 77%,rgba(38,85,139,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 11%,rgba(97,153,199,1) 26%,rgba(65,154,214,1) 41%,rgba(75,184,240,1) 64%,rgba(58,139,194,1) 77%,rgba(38,85,139,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 11%,rgba(97,153,199,1) 26%,rgba(65,154,214,1) 41%,rgba(75,184,240,1) 64%,rgba(58,139,194,1) 77%,rgba(38,85,139,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 11%,rgba(97,153,199,1) 26%,rgba(65,154,214,1) 41%,rgba(75,184,240,1) 64%,rgba(58,139,194,1) 77%,rgba(38,85,139,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+ 
+    width: 540px;    
+    margin: 100px auto 0;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -o-border-radius: 6px 6px 6px 6px;
+    -ms-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -moz-box-shadow: 0 0 10px #AAAAAA;
+    -webkit-box-shadow: 0 0 10px #AAAAAA;
+    -o-box-shadow: 0 0 10px #AAAAAA;
+    -ms-box-shadow: 0 0 10px #AAAAAA;
+     box-shadow: 0 0 10px #AAAAAA;
+
+    padding:15px;
+}
+#content {
+    background-color:#000;
+    overflow:none;
+}
+
+.midBox input[type="text"], input[type="password"], .registrationBox input[type="text"]{
+
+     -moz-border-radius: 0.4em 0.4em 0.4em 0.4em;
+    -moz-box-shadow: 0 -1px 0 0 #000000;
+    background-color: #303030;
+    border: medium none;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    height: 27px;
+    letter-spacing: 2px;   
+    padding: 0 0 0 10px;
+    width: 316px;
+    float:none;
+}
+
+.midBox label, .registrationBox label {
+    color: #303030;
+    font-family: MisoRegular,Helvetica,Arial,sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    float:left;
+    line-height: 25px;
+}
+
+input[type="password"] {
+    margin-left:16px;
+}
+.midBox form .submit input[type="submit"]{
+
+}
+
+.registrationBox .button {
+
+     background-color: #303030;
+    color: #FFFFFF;   
+    padding: 20px;    
+    -moz-border-radius: 30px;
+    -moz-box-shadow: 0 0 10px #AAAAAA;
+
+}
+
+.registrationBox div {
+
+    margin:20px;
+}
+.registrationBox {
+    display:none;
+    height:200px;
+}
+
+.registrationBox .button:hover{
+
+     background-color: silver;
+    color: #000;   
+    padding: 20px;    
+    -moz-border-radius: 30px;
+    -moz-box-shadow: 0 0 10px #AAAAAA;
+    text-decoration:none;
+
+}
+h2 {
+    background:none;
+}
+.midBox .link {
+    color: #FFFFFF;
+    float: right;
+    margin-top: -10px;
+}
+
+#cancelNew {
+color: #FFFFFF;
+    float: right;
+    margin-top: 20px;
+
+}
+
+.midBox .submit input[type="submit"] {
+   
+    background: -moz-linear-gradient(top,  rgb(255,255,0) 0%, rgb(255,255,255) 11%, rgb(255,255,255) 26%, rgb(255,255,0) 41%, rgb(255,255,255) 64%, rgb(255,255,0) 77%, rgb(255,255,255) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgb(255,255,0) 0%, rgb(255,255,255) 11%, rgb(255,255,255) 26%, rgb(255,255,0) 41%, rgb(255,255,255) 64%, rgb(255,255,0) 77%, rgb(255,255,255) 100%); /* FF3.6+ */
+    background: -o-linear-gradient(top,  rgb(255,255,0) 0%, rgb(255,255,255) 11%, rgb(255,255,255) 26%, rgb(255,255,0) 41%, rgb(255,255,255) 64%, rgb(255,255,0) 77%, rgb(255,255,255) 100%); /* FF3.6+ */
+    color: #000000;
+}
+
+.midBox .submit input[type="submit"]:hover{
+   background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(255,255,0) 11%, rgb(255,255,0) 26%, rgb(255,255,255) 41%, rgb(255,255,0) 64%, rgb(255,255,255) 77%, rgb(255,255,0) 100%); /* FF3.6+ */
+
+    background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%, rgb(255,255,0) 11%, rgb(255,255,0) 26%, rgb(255,255,255) 41%, rgb(255,255,0) 64%, rgb(255,255,255) 77%, rgb(255,255,0) 100%); /* FF3.6+ */
+     background: -o-linear-gradient(top,  rgb(255,255,255) 0%, rgb(255,255,0) 11%, rgb(255,255,0) 26%, rgb(255,255,255) 41%, rgb(255,255,0) 64%, rgb(255,255,255) 77%, rgb(255,255,0) 100%); /* FF3.6+ */
+   -moz-box-shadow: 0 0 10px #AAAAAA;
+   -webkit-box-shadow: 0 0 10px #AAAAAA;
+   -o-box-shadow: 0 0 10px #AAAAAA;
+    color: #000000;    
+}
