@@ -24,6 +24,17 @@ function saveContact(id) {
   var uname = $("#unameAdd").val(); 
   var relation = $("#relationAdd").val();
   var altNumber = $("#altNumberAdd").val();
+
+  if($.isNumeric(number) == false || number.length > 12 || number.length < 5) {
+    alert("please enter genuine number");
+    $("#numberAdd").focus();
+    return false;
+  }
+  if(uname == '' || uname.length < 3) {
+    alert("please enter genuine name");
+    $("#unameAdd").focus();
+    return false;
+  }
   var data = "number=" + number + "&uname=" + uname + "&relation=" + relation + "&altNumber=" + altNumber;
  
   if (typeof id == 'undefined') {
@@ -32,7 +43,6 @@ function saveContact(id) {
     var selector =".container #"+id;
     $(selector).remove();
   }
-  
 
    $.ajax({
         type:'POST',

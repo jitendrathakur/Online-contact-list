@@ -20,4 +20,21 @@ echo $this->Html->css('header');
     );
   ?>
   </div>
+  <div class="userLog">
+      <?php
+      echo $this->Html->link(
+        'Download&raquo;',
+        array(
+          'plugin'     => false,
+          'admin'      => false,
+          'controller' => 'homes',
+          'action'     => 'export',
+          'export.csv'
+        ),
+        array(          
+          'escape' => false
+        )
+    );
+      ?>
+  </div>
 </div>
