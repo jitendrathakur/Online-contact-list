@@ -1,1 +1,40 @@
-Hi this is my first project on github
+Hi 
+
+This application for storing our contact list on web. In this way you can get your contacts any where in the world. I hope you will feel very comfortable with this Apps.
+
+
+/* Now I am going to mention some useful code which I used for this application */
+
+/** CSV export
+ *  csv file 
+ *
+ *You can download your all contacts in csv format
+ *
+ */
+
+
+ I used here for flash message following code
+
+ css:
+
+ .flash {
+  width:600px;
+  height:40px;
+  background-color:#F0F0F0 ;
+  border:2px solid #F0F0F0 ;
+  color:#000;
+  font-weight:900;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align:center;
+  line-height: 40px;
+}
+
+
+js:
+
+setTimeout(function(){
+            $(".flash").fadeOut("slow", function () {
+            $(".flash").remove();
+           }); }, 2000);
