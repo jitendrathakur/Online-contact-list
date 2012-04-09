@@ -75,21 +75,28 @@ function saveContact(id) {
     id = '';
   } else {
     var selector =".container #"+id;
-    $(selector).remove();
+    $(selector).empty();
   }
 
    $.ajax({
         type:'POST',
         url: 'contacts/add/' + id,
         data:data,
-        success: function (response) {
-          $('.tempBox').empty();
-          $(response).appendTo(".container");   
+        success: function (response) {         
+          
+          if(id != '') {
+            $(response).appendTo(selector);  
+            console.log("true");
+          } else {
+            $('.tempBox').empty();
+            $(response).appendTo(".container");  
+          }
+
           if(typeof id != 'undefined') {  
                          
             $(selector).children().remove('.main-frame-edit'); 
           }
-          
+
           for(var i=1; i<1000; i++) {
             //var selectCon = ".container #" + i;
             //$(selectCon).appendTo(".container")​​​​​​​​​​​​​​​​​​​​​​​;

@@ -127,8 +127,11 @@ margin-left:20px;
 #textlook {
   background-color:gray;
   border-color:gray;
-  border:none;
+  border:0px;
   color:#fff;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  cursor:default;
 }
 
 

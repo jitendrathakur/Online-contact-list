@@ -76,7 +76,7 @@ exit;
         $contacts = $this->Contact->read();
       }     
     
-      $this->set(compact('contacts'));   
+      $this->set(compact('contacts','id'));   
  
   }
 

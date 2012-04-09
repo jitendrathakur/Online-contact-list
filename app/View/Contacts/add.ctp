@@ -1,10 +1,10 @@
 <?php
-
 //echo $this->Form->create('Contact' , array('type' => 'file'));
 //echo $this->Html->input('file', array('type' => 'file'));
 ?>
-
+ <?php if(empty($id)) { ?>
 <div id="<?php echo $contacts['Contact']['id']; ?>" class="main_frame">
+<?php } ?>
 <div id ="number" class="number_list">
      <input id="textlook" type="text" value="<?php echo $contacts['Contact']['number']; ?>" readonly="readonly" />    
 </div>
@@ -22,5 +22,6 @@
 /
 <a href="#" onclick="deleteContact(<?php echo $contacts['Contact']['id']; ?>)" id="listDelete">delete</a>
 </div>
-
+ <?php if(empty($id)) { ?>
 </div>
+<?php } ?>
