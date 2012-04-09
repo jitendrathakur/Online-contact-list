@@ -22,11 +22,22 @@ echo $this->Html->script('homes/index');
     <?php
      foreach($contacts as $contact) : ?>
     <div class ="main_frame" id="<?php echo $contact['Contact']['id']; ?>">
-      <div id ="number" class ="<?php echo $class; ?>"><?php echo $contact['Contact']['number']; ?></div>
-      <div id ="name" class ="<?php echo $class; ?>"><strong><?php echo $contact['Contact']['name']; ?></strong></div>      
-      <div id ="relation" class ="<?php echo $class; ?>"><?php echo $contact['Contact']['relation']; ?></div>
-      <div id ="altNumber" class ="<?php echo $class; ?>"><?php echo $contact['Contact']['alternate_number']; ?></div>
-      <div class ="<?php echo $class; ?>"><a href="#" onclick="editContact(<?php echo $contact['Contact']['id']; ?>)" id="listEdit">edit</a>/<a href="#" onclick="deleteContact(<?php echo $contact['Contact']['id']; ?>)" id="listDelete">delete</a></div> 
+      <div id ="number" class ="<?php echo $class; ?>">
+        <input id="textlook" type="text" value="<?php echo $contact['Contact']['number']; ?>" readonly="readonly" />
+        
+      </div>
+      <div id ="name" class ="<?php echo $class; ?>">
+        <strong>
+          <input id="textlook" type="text" value="<?php echo $contact['Contact']['name']; ?>" readonly="readonly" />        
+        </strong>
+      </div>      
+      <div id ="relation" class ="<?php echo $class; ?>">
+         <input id="textlook" type="text" value="<?php echo $contact['Contact']['relation']; ?>" readonly="readonly" />        
+      </div>
+      <div id ="altNumber" class ="<?php echo $class; ?>">
+        <input id="textlook" type="text" value="<?php echo $contact['Contact']['alternate_number']; ?>" readonly="readonly" />         
+      </div>
+      <div id="action" class ="action <?php echo $class; ?>"><a href="#" onclick="editContact(<?php echo $contact['Contact']['id']; ?>)" id="listEdit">edit</a>&nbsp;&nbsp;<a href="#" onclick="deleteContact(<?php echo $contact['Contact']['id']; ?>)" id="listDelete">delete</a></div> 
     </div>
     <?php endforeach; ?>
 

@@ -92,7 +92,6 @@ border: 10px solid;
 
 .outer .tempBox div {
 padding-top:5px;
-min-height:50px;
 margin: 5px 0 0 0px;
 background-color:gray;
 }
@@ -123,6 +122,13 @@ margin-left:20px;
 
 .span12, .container {
     width: auto;
+}
+
+#textlook {
+  background-color:gray;
+  border-color:gray;
+  border:none;
+  color:#fff;
 }
 
 

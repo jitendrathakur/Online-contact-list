@@ -36,13 +36,13 @@ class HomesController extends AppController
      );
 
      $headers = array(
-          'Contact'=>array(
-            'number' => 'Number',
-            'name' => 'Name',
-            'relation' => 'Relation',
-            'alternate_number' => 'Alternate Number',            
-          )
-        );
+                 'Contact' => array(
+                              'number'           => '<b>Number</b>',
+                              'name'             => '<b>Name</b>',
+                              'relation'         => '<b>Relation</b>',
+                              'alternate_number' => '<b>Alternate Number</b>',            
+                             )
+                );
 
      // Add headers to start of data array
       array_unshift($contacts,$headers);
